@@ -27,9 +27,11 @@ app.post('/', function(req, res) {
       "status": "subscribed",
       "merge_fields": {
         "FNAME": req.body.firstname,
-        "LNAME": req.body.lastname
+        "LNAME": req.body.lastname,
+        "MMERGE6":req.body.password
       }
     }]
+
 
   };
   const jsonData = JSON.stringify(data);
