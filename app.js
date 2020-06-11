@@ -30,6 +30,7 @@ app.post('/', function(req, res) {
         "LNAME": req.body.lastname
       }
     }]
+
   };
   const jsonData = JSON.stringify(data);
 
@@ -53,7 +54,7 @@ app.post('/', function(req, res) {
     });
 
   });
-  // request.write(jsonData);
+  request.write(jsonData);
   request.end();
 });
 
